@@ -28,29 +28,34 @@ get_header(); ?>
 				<h6>Client: <?php echo $client; ?></h6>
 
 				<?php the_content(); ?>
-				<p><a href="<?php echo $link; ?>">Visit Live Site ›</a></p>
+				<p><strong><a href="<?php echo $link; ?>">site link"</a><strong></p>
 
 			</aside>
+
+	  <div class="case-study-images">
+				<?php if ($image_1) {
+					echo wp_get_attachment_image($image_1, $size);
+				}?>
+
+				<?php if ($image_2) {
+					echo wp_get_attachment_image($image_2, $size);
+				 }?>
+
+				<?php if ($image_3) {
+					echo wp_get_attachment_image( $image_3, $size );
+				} ?>
+
+			</div>
 
 		</article>
 
 
-<div class="case-study-images">
-	<?php if ($image_1) {
-		echo wp_get_attachment_image($image_1, $size);
-	}?>
 
-	<?php if ($image_2) {
-		echo wp_get_attachment_image($image_2, $size);
-	 }?>
-
-	<?php if ($image_3) {
-		echo wp_get_attachment_image( $image_3, $size );
-	} ?>
-
-</div>
 
 <?php endwhile; // end of the loop. ?>
 </div><!--#content -->
 </div><!-- #primary -->
+<nav id="navigation" class="container">
+	<div class="left"><a href="<?php echo site_url('/blog/') ?>">&larr; <span>Back to work</span></a></div>
+</nav>
 <?php get_footer(); ?>
