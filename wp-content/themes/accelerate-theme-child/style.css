@@ -104,7 +104,13 @@ aside.case-study-sidebar {
   font-weight: regular;
   font-size: 16.5px;
 }
-/*Featured Work*/
+
+div.case-study-images img {
+	width: 100%;
+	height: auto;
+}
+
+/*Front Page Featured Work*/
 .featured-work{
   text-align: center;
   text-transform:uppercase;
@@ -116,18 +122,17 @@ aside.case-study-sidebar {
   font-weight: semibold;
 }
 
-li{
+.homepage-featured-work li{
   list-style-type:none;
   font-family: 'OpenSans';
-  float: left;
-  padding:5px;
-  font-size: 10px;
-  color: #000000;
-}
-
-.homepage-featured-work {
-  font-family:'OpenSans';
   font-weight: semibold;
   text-transform: none;
   font-size: 16.5px;
+  float: left;
+  clear: right;
+  padding:5px;
+  font-size: 10px;
+  color: #000000;
+  width: 30%;
+  margin-right: 3%;
 }

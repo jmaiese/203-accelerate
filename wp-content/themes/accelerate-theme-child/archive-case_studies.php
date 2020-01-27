@@ -24,7 +24,7 @@ get_header(); ?>
             <h6><?php echo $services; ?></h6>
             <?php the_excerpt(); ?>
 
-            <p><strong><a href="<?php echo $link; ?>">View Project></a><strong></p>
+            <p><strong><a href="<?php the_permalink(); ?>">View Project></a><strong></p>
 
           </aside>
 
@@ -34,8 +34,9 @@ get_header(); ?>
              }?>
 
 			<?php endwhile; // end of the loop. ?>
-
+				</div><!-- #primary -->
 	</article>
-	</div><!-- #primary -->
+
 </div>
+
 <?php get_footer(); ?>
