@@ -17,12 +17,12 @@ get_header(); ?>
         $size = "full";
         $services = get_field('services');
         ?>
-
+			</div><!-- .main-content -->
     <article class = "case-study">
           <aside class = "case-study-sidebar">
             <h2><?php the_title(); ?></h2>
             <h6><?php echo $services; ?></h6>
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?>
 
             <p><strong><a href="<?php echo $link; ?>">View Project></a><strong></p>
 
@@ -34,8 +34,8 @@ get_header(); ?>
              }?>
 
 			<?php endwhile; // end of the loop. ?>
-		</div><!-- .main-content -->
 
+	</article>
 	</div><!-- #primary -->
-
+</div>
 <?php get_footer(); ?>

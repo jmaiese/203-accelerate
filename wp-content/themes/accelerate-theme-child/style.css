@@ -31,15 +31,13 @@ Text Domain:  accelerate-theme-child
 }
 
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font-family: 'Montserrat';
+    font-size: 15px;
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+    margin: 2em 0 2em;
     float: center;
-}
 
-.blog-post h3 {
-	font-size: 1.5em;
 }
 
 .blog-post a{
@@ -49,44 +47,49 @@ Text Domain:  accelerate-theme-child
   color: #000000;
 }
 
-.read-more-link {
+.read-more-link span {
   font-family: 'Montserrat';
   font-weight: bold;
-  font-size: 26.88px;
+  font-size: 15px;
+  text-transform: uppercase;
   color: #45ac9d;
+  margin: 0px, 20px, 0px, 0px;
 }
 /*Case Studies*/
 aside.case-study-sidebar {
   float:left;
   text-align: left;
-  width: 300px;
+  width: 310px;
+  margin-top: 65px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  margin-left: 20px;
 }
 
 .case-study-images {
   float:left;
   width:608px;
   margin-top: 100px;
-  margin-bottom: 200px;
 }
 
-h2{
+.case-study-sidebar h2{
   font-family: 'Open Sans';
   font-weight: semibold;
   font-size: 25px;
 }
 
-h5{
+.case-study-sidebar h5{
   font-family:'Open Sans';
   font-weight:regular;
   font-size: 14px;
-  font-color: #878787;
+  color: #878787;
 }
 
-h6{
+.case-study-sidebar h6{
   font-family:'Open Sans';
   font-weight:regular;
   font-size: 14px;
-  font-color: #878787;
+  color: #878787;
 }
 
 .case-study a {
@@ -96,10 +99,21 @@ h6{
  text-transform: uppercase;
 }
 
+.case-study-sidebar <p>{
+  font-family: "Open Sans";
+  font-weight: regular;
+  font-size: 16.5px;
+}
 /*Featured Work*/
 .featured-work{
   text-align: center;
   text-transform:uppercase;
+}
+
+.individual-featured-work h3{
+  font-family: 'Open Sans';
+  font-size: 16.5px;
+  font-weight: semibold;
 }
 
 li{
@@ -116,11 +130,4 @@ li{
   font-weight: semibold;
   text-transform: none;
   font-size: 16.5px;
-}
-
-/****archive-case_studies***/
-.case-study-sidebar {
-  text-align: left;
-;
-
 }
