@@ -70,26 +70,28 @@ aside.case-study-sidebar {
   float:left;
   width:608px;
   margin-top: 100px;
+  margin-bottom:25px;
 }
 
 .case-study-sidebar h2{
   font-family: 'Open Sans';
   font-weight: semibold;
   font-size: 25px;
+  color: black;
+  text-transform: none;
 }
 
 .case-study-sidebar h5{
   font-family:'Open Sans';
-  font-weight:regular;
   font-size: 14px;
   color: #878787;
+  text-transform: none;
 }
 
 .case-study-sidebar h6{
   font-family:'Open Sans';
-  font-weight:regular;
   font-size: 14px;
-  color: #878787;
+  color: #000000;
 }
 
 .case-study a {
@@ -99,7 +101,7 @@ aside.case-study-sidebar {
  text-transform: uppercase;
 }
 
-.case-study-sidebar <p>{
+.case-study-sidebar p {
   font-family: "Open Sans";
   font-weight: regular;
   font-size: 16.5px;
@@ -122,6 +124,11 @@ div.case-study-images img {
   font-weight: semibold;
 }
 
+.homepage-featured-work ul{
+  overflow: auto;
+}
+
+
 .homepage-featured-work li{
   list-style-type:none;
   font-family: 'OpenSans';
@@ -129,10 +136,25 @@ div.case-study-images img {
   text-transform: none;
   font-size: 16.5px;
   float: left;
-  clear: right;
+  clear: inheri t;
   padding:5px;
   font-size: 10px;
   color: #000000;
   width: 30%;
   margin-right: 3%;
+}
+
+/*Social Footer*/
+.social-icon{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
+  float: right;
+  overflow: auto;
+  list-style: none;
+  color: white;
+  background-color:#000000;
+}
+
 }
