@@ -148,13 +148,15 @@ div.case-study-images img {
 .social-icon{
   width: 30px;
   height: 30px;
-  margin: 5px;
+  margin: 10px;
   border-radius: 50%;
   float: right;
   overflow: auto;
   list-style: none;
-  color: white;
-  background-color:#000000;
+  background: black;
+  text-align: center;
 }
 
+.social-icon a{
+  color: white;
 }
