@@ -47,7 +47,7 @@ Text Domain:  accelerate-theme-child
   color: #000000;
 }
 
-.read-more-link span {
+.read-more-link a{
   font-family: 'Montserrat';
   font-weight: bold;
   font-size: 15px;
@@ -55,6 +55,7 @@ Text Domain:  accelerate-theme-child
   color: #45ac9d;
   margin: 0px, 20px, 0px, 0px;
 }
+
 /*Case Studies*/
 aside.case-study-sidebar {
   float:left;
