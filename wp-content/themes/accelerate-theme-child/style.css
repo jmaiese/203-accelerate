@@ -155,8 +155,10 @@ div.case-study-images img {
   list-style: none;
   background: black;
   text-align: center;
+  padding-top: 4px;
 }
 
-.social-icon a{
+.social-icon a {
   color: white;
+
 }
