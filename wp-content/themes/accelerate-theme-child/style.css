@@ -137,7 +137,7 @@ div.case-study-images img {
   text-transform: none;
   font-size: 16.5px;
   float: left;
-  clear: inheri t;
+  clear: inherit;
   padding:5px;
   font-size: 10px;
   color: #000000;
@@ -162,4 +162,45 @@ div.case-study-images img {
 .social-icon a {
   color: white;
 
+}
+
+
+/*Contact Page*/
+#primary.site-content.sidebar {
+width: 600px;
+}
+
+div.main-content h2{
+  font-size: 25px;
+}
+
+div.main-content p{
+  font-size: 16px;
+}
+
+div.main-content label{
+  font-size: 14px;
+  font-weight: semibold;
+}
+
+
+div.main-content input {
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#nf-field-4 {
+  color: white;
+  background-color: #45ac9d;
+}
+
+/*About Page*/
+
+#about-primary.home-page.hero-content{
+  height: 200px;
+}
+
+.main-content h3{
+  padding: 0;
 }

@@ -24,7 +24,20 @@ function create_custom_post_types() {
         )
     );
 }
+
+register_post_type( 'services',
+    array(
+        'labels' => array(
+            'name' => __( 'Services' ),
+            'singular_name' => __( 'service' )
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array( 'slug' => 'services' ),
+    )
+);
 add_action( 'init', 'create_custom_post_types' );
+
 
 // Enqueue scripts and styles
 function accelerate_child_scripts(){
