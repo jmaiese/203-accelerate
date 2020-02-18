@@ -195,12 +195,96 @@ div.main-content input {
   background-color: #45ac9d;
 }
 
+
+
 /*About Page*/
 
-#about-primary.home-page.hero-content{
-  height: 200px;
+.hero.image{
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.main-content h3{
-  padding: 0;
+.hero.image h3{
+  font: OpenSans;
+  font-weight: semibold;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro h6{
+  font: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+}
+
+.intro p{
+  font: OpenSans;
+  font-size: 16.5px;
+  text-align: center;
+}
+
+
+/***Services List***/
+
+.services-list{
+  display: flex;
+  flex-flow: row wrap;
+  max-width: none;
+  margin: inherit;
+}
+
+
+.copy{
+  width: 650px;
+  height: auto;
+  margin: 20px 20px 20px 0px;
+}
+
+
+.services-list img{
+  width: 216px;
+  height: 216px;
+  margin: 10px 150px 10px 150px;
+  align-items: left;
+}
+
+
+.services-list h2{
+  width: 580px;
+  height: auto;
+  font: OpenSans;
+  font-weight:semibold;
+  font-size: 25px;
+}
+
+
+.services-list p{
+  font: OpenSans;
+  font-size: 16.5px;
+}
+
+
+/***Interested in working with us?***/
+.contact-flex-container{
+  display: flex;
+  height: 200px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 100px 20px 20px 20px;
+}
+
+.contact h2{
+  width: 350px;
+  font-weight: bold;
+}
+
+.contact a{
+  width: 250px;
+  margin-left: 10px;
 }

@@ -37,10 +37,10 @@ get_header(); ?>
 							?>
 						<li class="individual-featured-work">
 							<figure>
-										<a href="php the_permalink(); ?>"><?php echo wp_get_attachment_image($image_1, $size); ?><a>
+										<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image_1, $size); ?><a>
 							</figure>
 
-   		  				<h3><a href="php the_permalink(); ?>"><?php the_title(); ?><a></h3>
+   		  				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?><a></h3>
 						</li>
 
    					<?php endwhile; //end of the loop. ?>
