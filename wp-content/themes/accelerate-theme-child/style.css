@@ -199,20 +199,11 @@ div.main-content input {
 
 /*About Page*/
 
-.hero.image{
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero.image h3{
-  font: OpenSans;
+.main-about p{
+  font-family: 'Open Sans';
   font-weight: semibold;
   font-size: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .intro h6{
@@ -236,6 +227,7 @@ div.main-content input {
   flex-flow: row wrap;
   max-width: none;
   margin: inherit;
+  justify-content: center;
 }
 
 
@@ -268,6 +260,16 @@ div.main-content input {
   font-size: 16.5px;
 }
 
+.service{
+  display: flex;
+  flex-direction: row;
+}
+
+.service nth-child(odd){
+  flex-direction: row-reverse;
+}
+
+
 
 /***Interested in working with us?***/
 .contact-flex-container{
@@ -287,4 +289,33 @@ div.main-content input {
 .contact a{
   width: 250px;
   margin-left: 10px;
+}
+
+
+/***404 Page***/
+
+div.main-content-404{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 0%;
+  height: auto;
+}
+
+.copy{
+  padding-left: 60px;
+}
+
+.copy h1{
+  font-family:'Fjalla One' ,sans-serif;
+  font-size: 80px;
+}
+
+.copy h4{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
 }

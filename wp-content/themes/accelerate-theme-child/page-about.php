@@ -10,12 +10,14 @@
 
 get_header(); ?>
 
-<div class="hero image">
-			<img src=http://localhost:8888/accelerate/wp-content/uploads/2020/02/taxi-photo-about.jpg alt="Taxi" style="width:100%">
-			<div class="centered"><h3>Accelerate is a strategy and marketing agency <br> located in the heart of NYC.
-				 Our goal is to build <br> businesses by making our clients visible and <br> making their customers smile.</h3>
-				 </div>
-</div>
+<div id="primary" class="home-page hero-content">
+	<div class="main-about" role="main">
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+			<p>Accelerate is a strategy and marketing agency <br> located in the heart of NYC. Our goal is to build <br>businesses by making our clients visible and <br> making their customers smile.</p>
+		<?php endwhile; // end of the loop. ?>
+	</div><!-- .main-about -->
+</div><!-- #primary -->
 
 		<div class="intro"  role="intro copy">
 			<h6> OUR SERVICES </h6>
@@ -25,6 +27,7 @@ get_header(); ?>
 
 
 <div class="services-list">
+
 						<?php query_posts('posts_per_page=4&post_type=services'); ?>
 				 			 	<?php while ( have_posts() ) : the_post();
 										$service = get_field ("service");
@@ -32,17 +35,24 @@ get_header(); ?>
 										$image = get_field ("image");
 										$size = "medium";?>
 
+				<div class="service">
 
-							<div class= "image"><?php if ($image) {
+						<div class= "image">
+								<?php if ($image) {
 								echo wp_get_attachment_image($image, $size);
 							} ?>
-						</div>
-							<div class="copy"><h2> <?php echo $service; ?> </h2>
-							<p> <?php echo $description;?> </p>
-						</div>
+						</div><!--.image-->
+
+						<div class="copy">
+							<h2> <?php echo $service; ?> </h2>
+							<p>  <?php echo $description;?> </p>
+						</div><!--.copy-->
+
+				</div><!-- .service-->
+				
 				   					<?php endwhile; //end of the loop. ?>
 										<?php wp_reset_query(); //resets the altered query back to the original?>
-				</div><!-- .services list -->
+</div><!-- .services list -->
 
 <div class = "contact">
 <div class="contact-flex-container">
