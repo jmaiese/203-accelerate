@@ -10,6 +10,10 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
+
+
+/*Front Page Styles*/
+
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
@@ -23,6 +27,7 @@ Text Domain:  accelerate-theme-child
 .button {
 	background:  none repeat scroll 0 0 #45ac9d;
 }
+
 
 .blog-post {
 	width: 50%;
@@ -42,14 +47,14 @@ Text Domain:  accelerate-theme-child
 
 .blog-post a{
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-weight: 'bold';
   font-size: 24px;
   color: #000000;
 }
 
 .read-more-link a{
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-weight: 'bold';
   font-size: 15px;
   text-transform: uppercase;
   color: #45ac9d;
@@ -57,7 +62,7 @@ Text Domain:  accelerate-theme-child
 }
 
 /*Case Studies*/
-aside.case-study-sidebar {
+aside.case-study-sidebar{
   float:left;
   text-align: left;
   width: 310px;
@@ -76,7 +81,7 @@ aside.case-study-sidebar {
 
 .case-study-sidebar h2{
   font-family: 'Open Sans';
-  font-weight: semibold;
+  font-weight: 'semibold';
   font-size: 25px;
   color: black;
   text-transform: none;
@@ -114,6 +119,7 @@ div.case-study-images img {
 }
 
 /*Front Page Featured Work*/
+
 .featured-work{
   text-align: center;
   text-transform:uppercase;
@@ -122,8 +128,9 @@ div.case-study-images img {
 .individual-featured-work h3{
   font-family: 'Open Sans';
   font-size: 16.5px;
-  font-weight: semibold;
+  font-weight: 'semibold';
 }
+
 
 .homepage-featured-work ul{
   overflow: auto;
@@ -131,9 +138,9 @@ div.case-study-images img {
 
 
 .homepage-featured-work li{
-  list-style-type:none;
+  list-style-type: none;
   font-family: 'OpenSans';
-  font-weight: semibold;
+  font-weight: 'semibold';
   text-transform: none;
   font-size: 16.5px;
   float: left;
@@ -145,7 +152,27 @@ div.case-study-images img {
   margin-right: 3%;
 }
 
+.widgets{
+  padding-top: 5px;
+}
+
+.widgets h3{
+  font-family: 'Montserrat';
+  font-size: 15px;
+  color:#A6A6A6;
+  text-transform: uppercase;
+  padding: 20px 0px 20px 50px;
+}
+
+.widgets p{
+  font-family: 'OpenSans';
+  font-size: 16px;
+
+
+
+
 /*Social Footer*/
+
 .social-icon{
   width: 30px;
   height: 30px;
@@ -201,20 +228,20 @@ div.main-content input {
 
 .main-about p{
   font-family: 'Open Sans';
-  font-weight: semibold;
+  font-weight: 'semibold';
   font-size: 25px;
   color: white;
 }
 
 .intro h6{
-  font: Montserrat;
+  font: 'Montserrat';
   font-weight: bold;
   font-size: 15px;
   text-align: center;
 }
 
 .intro p{
-  font: OpenSans;
+  font: 'OpenSans';
   font-size: 16.5px;
   text-align: center;
 }
@@ -241,7 +268,7 @@ div.main-content input {
 .services-list img{
   width: 216px;
   height: 216px;
-  margin: 10px 150px 10px 150px;
+  margin: 10px 95px 10px 50px;
   align-items: left;
 }
 
@@ -249,23 +276,24 @@ div.main-content input {
 .services-list h2{
   width: 580px;
   height: auto;
-  font: OpenSans;
-  font-weight:semibold;
+  font: 'OpenSans';
+  font-weight:'semibold';
   font-size: 25px;
 }
 
 
 .services-list p{
-  font: OpenSans;
+  font: 'OpenSans';
   font-size: 16.5px;
 }
 
 .service{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.service nth-child(odd){
+.service:nth-child(even){
   flex-direction: row-reverse;
 }
 

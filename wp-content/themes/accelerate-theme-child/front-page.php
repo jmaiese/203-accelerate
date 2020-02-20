@@ -39,7 +39,6 @@ get_header(); ?>
 							<figure>
 										<a href="<?php the_permalink(); ?>"><?php echo wp_get_attachment_image($image_1, $size); ?><a>
 							</figure>
-
    		  				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?><a></h3>
 						</li>
 
@@ -61,7 +60,15 @@ get_header(); ?>
   <?php endwhile; ?>
 <?php wp_reset_query(); ?>
    </div>
-	 </div>
 	</section>
+	
+<div class= "widgets">
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+	</div>
+<?php endif; ?>
+	 </div>
+
 
 <?php get_footer(); ?>
