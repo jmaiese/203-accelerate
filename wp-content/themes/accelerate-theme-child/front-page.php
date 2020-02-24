@@ -50,25 +50,22 @@ get_header(); ?>
 </section>
 
 	<section class="recent-posts">
-	 <div class="site-content">
 		 <div class="blog-post">
        <h4>From the Blog</h4>
-			 <?php query_posts('posts_per_page=1'); ?>
+		<?php query_posts('posts_per_page=1'); ?>
 			 <?php while ( have_posts() ) : the_post(); ?>
-  		  <a><?php the_title(); ?></a>
+  		  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?><a><h3>
 			  <?php the_excerpt(); ?>
-  <?php endwhile; ?>
+  			<?php endwhile; ?>
 <?php wp_reset_query(); ?>
    </div>
 	</section>
-	
-<div class= "widgets">
+
 	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 	</div>
 <?php endif; ?>
-	 </div>
 
 
 <?php get_footer(); ?>

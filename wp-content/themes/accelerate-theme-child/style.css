@@ -28,21 +28,19 @@ Text Domain:  accelerate-theme-child
 	background:  none repeat scroll 0 0 #45ac9d;
 }
 
-
-.blog-post {
-	width: 50%;
-	float: left;
-	margin-bottom: 2em;
+.blog-post{
+  width: 450px;
+  float: left;
+  overflow:auto;
+  margin-left: 250px;
 }
 
 .blog-post h4 {
-    font-family: 'Montserrat';
-    font-size: 15px;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin: 2em 0 2em;
-    float: center;
-
+  font-family: 'Montserrat';
+  font-size: 15px;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 2em;
 }
 
 .blog-post a{
@@ -152,24 +150,38 @@ div.case-study-images img {
   margin-right: 3%;
 }
 
-.widgets{
-  padding-top: 5px;
-}
 
-.widgets h3{
+/**Widgets**/
+
+.widget-area h3{
   font-family: 'Montserrat';
   font-size: 15px;
   color:#A6A6A6;
   text-transform: uppercase;
-  padding: 20px 0px 20px 50px;
+  padding: 0px 0px 20px 0px;
 }
 
-.widgets p{
+.widget-area p{
   font-family: 'OpenSans';
   font-size: 16px;
+}
 
+.widget-area label{
+  font-family: 'OpenSans';
+  font-size: 17px;
+  font-weight: bold;
+}
 
+.mc4wp-form input[type="submit"] {
+  background-color: #45ac9d;
+}
 
+#secondary.widget-area aside{
+  padding-left: 150px;
+  float: left;
+  clear: inherit;
+  width: 50%;
+}
 
 /*Social Footer*/
 
@@ -188,7 +200,6 @@ div.case-study-images img {
 
 .social-icon a {
   color: white;
-
 }
 
 
@@ -329,8 +340,8 @@ div.main-content-404{
   align-items: center;
 }
 
-img{
-  width: 0%;
+.main-content-404 img{
+  width: 50%;
   height: auto;
 }
 
